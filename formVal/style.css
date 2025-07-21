@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Validation Feedback Styles */
+input.invalid {
+    border-color: #dc3545; /* Red border for invalid */
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.25);
+}
+
+input.valid {
+    border-color: #28a745; /* Green border for valid */
+}
+
+.error-message {
+    color: #dc3545; /* Red text for error messages */
+    font-size: 0.85em;
+    margin-top: 5px;
+    min-height: 20px; /* Reserve space to prevent layout shift */
+    display: block; /* Ensure it takes up space even when empty */
+}
+
+.success-message {
+    color: #28a745; /* Green text for success message */
+    font-size: 1.1em;
+    margin-top: 25px;
+    font-weight: bold;
+    display: none; /* Hidden by default */
+}
+
+button[type="submit"] {
+    background-color: #28a745; /* Green submit button */
+    color: white;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+button[type="submit"]:active {
+    transform: translateY(1px);
+}
